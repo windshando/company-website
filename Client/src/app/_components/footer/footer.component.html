@@ -1,0 +1,24 @@
+<footer>
+  <span>Glove © {{ "copy" | translate }}.</span>
+  <span class="links">
+  	<a routerLink="/">{{ "home" | translate }}</a>
+  	<a routerLink="/">{{ "services" | translate }}</a>
+  	<a routerLink="/works">{{ "portfolio" | translate }}</a>
+  	<a routerLink="/">{{ "about" | translate }}</a>
+  	<a routerLink="/">{{ "contacts" | translate }}</a>
+  </span>
+  <span class="footer-right">
+  	<span>{{phone}}</span>
+
+    <select id="lang-bar" (change)="changeLang($event.target.value)">
+  	  <option value="en" [selected]="language == 'en'">English</option>
+  	  <option value="ru" [selected]="language == 'ru'">Русский</option>
+  	  <option value="uk" [selected]="language == 'uk'">Українська</option>
+	  </select>
+    <!-- <span class="lang-bar">
+      <span (click)="changeLang('en')">English</span>
+      <span (click)="changeLang('ru')">Русский</span>
+      <span (click)="changeLang('uk')">Українська</span>
+    </span> -->
+  </span>
+</footer>

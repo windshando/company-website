@@ -1,0 +1,23 @@
+footer {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 8px;
+}
+
+.links a {
+	padding: 0 4px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  span:not(:last-child){
+  	padding-right: 4px;
+  }
+
+  #lang-bar {
+
+  }
+
+}

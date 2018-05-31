@@ -1,0 +1,22 @@
+<div class="contact-us">
+  <div>{{ "contact_us" | translate }}</div>
+  <form #contactUs="ngForm" (ngSubmit)="onContactUs()">
+  	<input name="name" 
+  	  placeholder='{{ "your_name" | translate }}'
+      [(ngModel)]="contact.name" />
+    <input name="contact" 
+  	  placeholder='{{ "your_contact" | translate }}'
+      [(ngModel)]="contact.phone"/>
+    <select name="type"
+      [(ngModel)]="contact.type" >
+  	  <option [value]="1">Type1</option>
+  	  <option [value]="2">Type2</option>
+	</select>
+	<input name="about" 
+  	  placeholder='{{ "about_your_project" | translate }}'
+      [(ngModel)]="contact.about" />
+    <button type="submit">
+      <span>{{ "send" | translate }}</span>
+    </button>
+  </form>
+</div>

@@ -1,0 +1,30 @@
+@import '../../../colors';
+
+header {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  outline:none;
+  border:none;
+  display:block;
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  cursor:pointer;
+  font-size:20px;
+  background-color:transparent;
+  position:relative;
+  border:2px solid $main-color;
+  color: $main-color;
+  padding: 4px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.contact:hover {
+  color: #fff;
+  background-color: $main-color; 
+}
